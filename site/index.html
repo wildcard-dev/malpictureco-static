@@ -126,32 +126,36 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
         }
 
         .contact-column h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 16px;
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 24px;
             font-weight: 400;
             letter-spacing: 3px;
             padding-left: 3px;
             text-transform: uppercase;
-            color: rgba(255, 255, 255, 0.4);
+            color: rgba(255, 255, 255, 0.5);
             margin-bottom: 12px;
+            transition: color 0.3s ease;
         }
 
-        .contact-column a {
+        .contact-column span {
             font-family: 'Cormorant Garamond', serif;
             font-size: 18px;
-            font-weight: 400;
+            font-weight: 300;
             letter-spacing: 1px;
             padding-left: 1px;
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
+            color: rgba(255, 255, 255, 0.5);
             transition: color 0.3s ease;
             white-space: nowrap;
         }
 
-        .contact-column a:hover {
+        .contact-column:hover h3,
+        .contact-column:hover span {
             color: #fff;
         }
 
@@ -191,6 +195,7 @@
 
             .tagline {
                 margin-bottom: 40px;
+                text-align: center;
             }
         }
     </style>
@@ -212,18 +217,18 @@
         </div>
 
         <div class="contact-grid">
-            <div class="contact-column">
+            <a class="contact-column" href="mailto:info@themalpicturecompany.com">
                 <h3>General Inquiries</h3>
-                <a href="mailto:info@themalpicturecompany.com">info@themalpicturecompany.com</a>
-            </div>
-            <div class="contact-column">
+                <span>info@themalpicturecompany.com</span>
+            </a>
+            <a class="contact-column" href="mailto:submissions@themalpicturecompany.com">
                 <h3>Project Submissions</h3>
-                <a href="mailto:submissions@themalpicturecompany.com">submissions@themalpicturecompany.com</a>
-            </div>
-            <div class="contact-column">
+                <span>submissions@themalpicturecompany.com</span>
+            </a>
+            <a class="contact-column" href="mailto:press@themalpicturecompany.com">
                 <h3>Press & Media</h3>
-                <a href="mailto:press@themalpicturecompany.com">press@themalpicturecompany.com</a>
-            </div>
+                <span>press@themalpicturecompany.com</span>
+            </a>
         </div>
     </div>
 </body>

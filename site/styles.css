@@ -116,32 +116,36 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .contact-column h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
     font-weight: 400;
     letter-spacing: 3px;
     padding-left: 3px;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.5);
     margin-bottom: 12px;
+    transition: color 0.3s ease;
 }
 
-.contact-column a {
+.contact-column span {
     font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 1px;
     padding-left: 1px;
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
     transition: color 0.3s ease;
     white-space: nowrap;
 }
 
-.contact-column a:hover {
+.contact-column:hover h3,
+.contact-column:hover span {
     color: #fff;
 }
 
@@ -181,5 +185,6 @@ body {
 
     .tagline {
         margin-bottom: 40px;
+        text-align: center;
     }
 }
